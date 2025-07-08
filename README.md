@@ -33,13 +33,11 @@ git clone https://github.com/start94/Code-of-Babel.git
 cd Code-of-Babel
 2. Install dependencies
 bash
-Copia
-Modifica
+
 pip install fastapi uvicorn scikit-learn numpy pydantic
 3. Run the API
 bash
-Copia
-Modifica
+
 uvicorn museum_lang_api:app --reload
 4. Try it in your browser
 Visit 👉 http://localhost:8000/docs for Swagger UI.
@@ -48,14 +46,12 @@ Visit 👉 http://localhost:8000/docs for Swagger UI.
 Build the image:
 
 bash
-Copia
-Modifica
+
 docker build -t code-of-babel .
 Run the container:
 
 bash
-Copia
-Modifica
+
 docker run -d -p 8000:8000 code-of-babel
 📥 API Usage
 POST /identify-language
@@ -64,8 +60,7 @@ Detect the language of a text.
 Request:
 
 json
-Copia
-Modifica
+
 {
   "text": "Questo è un testo in italiano."
 }
@@ -97,5 +92,6 @@ This project is currently unlicensed. Add a LICENSE file if needed.
 Developed by Raffaele Diomaiuto
 GitHub: start94
 Project: MuseumLangAPI – School collaboration
+
 
 
